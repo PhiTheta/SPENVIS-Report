@@ -1,7 +1,7 @@
 
-# Created by https://www.gitignore.io/api/ac,osx,latex
-
-#!! ERROR: ac is undefined. Use list command to see defined gitignore types !!#
+### Texpad ###
+.texpadtmp/
+.texpadtmp
 
 ### OSX ###
 .DS_Store
