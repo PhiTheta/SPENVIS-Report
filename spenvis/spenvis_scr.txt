@@ -1,0 +1,127 @@
+
+-------------------------------------------------------------
+MULTI-LAYER SHIELDING SIMULATION SOFTWARE (MULASSIS)
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+Code Development Information
+-------------------------------------------------------------
+
+MULASSIS has been developed by    : Dr F Lei & Dr P Truscott, 
+                                    QinetiQ Ltd, UK
+  with the assistance of          : The Geant4 Collaboration
+MULASSIS development sponsored by : European Space Agency, 
+                                    Space Environments and
+                                    Effects Analysis Section
+
+MULASSIS version                  : ml-v01-20
+File creation date & time         : Sun Mar 27 19:53:56 2016
+
+
+
+-------------------------------------------------------------
+Material Definition:
+-------------------------------------------------------------
+
+There are 3 materials used:
+ Material:   Vacuum     density:  0.000 kg/m3   RadL: 204727512.315 pc   Nucl.Int.Length: 113804112.800 pc   Imean:  21.800 eV   temperature:   2.73 K  pressure:   0.00 atm
+   --->  Element: Vacuum ( )   Z =  1.0   N =   1.0   A =   1.01 g/mole  ElmMassFraction: 100.00 %  ElmAbundance 100.00 %
+ Material: silicon_dioxide_(fused_quartz)     density:  2.320 g/cm3   RadL:  11.658 cm   Nucl.Int.Length:  41.318 cm   Imean: 126.007 eV 
+   --->  Element: Si ()   Z = 14.0   N =  28.1   A =  28.09 g/mole  ElmMassFraction:  46.74 %  ElmAbundance  33.33 %
+   --->  Element:  O ( O)   Z =  8.0   N =  16.0   A =  16.00 g/mole  ElmMassFraction:  53.26 %  ElmAbundance  66.67 %
+ Material: gallium_arsenide     density:  5.310 g/cm3   RadL:   2.296 cm   Nucl.Int.Length:  27.466 cm   Imean: 340.783 eV 
+   --->  Element: Ga (Ga)   Z = 31.0   N =  69.7   A =  69.72 g/mole  ElmMassFraction:  48.20 %  ElmAbundance  50.00 %
+   --->  Element: As (As)   Z = 33.0   N =  74.9   A =  74.92 g/mole  ElmMassFraction:  51.80 %  ElmAbundance  50.00 %
+
+-------------------------------------------------------------
+Geometry Definition:
+-------------------------------------------------------------
+
+There are 3 physical volumes used (including the world volume which is PhysVol #1).
+
+PhyVol#  PhyVol Name     Start      Thickness  Material
+      2  Layer-1         -120 um    230 um     silicon_dioxide
+      3  Layer-2         110 um     10 um      gallium_arsenid
+
+-------------------------------------------------------------
+Physics Definition:
+-------------------------------------------------------------
+Simulation scenario : em
+Applied default cuts: 100 um 
+Production Cuts By Region:
+ Region: DefaultRegionForTheWorld
+  GammaCutLength    : 100 um 
+  ElectronCutLength    : 100 um 
+  PositronCutLength    : 100 um 
+  Cuts in Energy    : 
+    in Vacuum: 
+        gamma 990 eV     e- 990 eV     e+ 990 eV 
+    in silicon_dioxide_(fused_quartz): 
+        gamma 1.96 keV    e- 123 keV    e+ 122 keV
+    in gallium_arsenide: 
+        gamma 5.95 keV    e- 174 keV    e+ 168 keV
+
+-------------------------------------------------------------
+Incident Particle Definition:
+-------------------------------------------------------------
+
+The incident particle type:       proton
+The incident position is:         (0,0,-0.1201)
+The number of particles fired is: 1e+04
+The incident particle fluence:    5.291e+14 particles/cm2
+
+-------------------------------------------------------------
+Fluence Analysis:
+-------------------------------------------------------------
+ Outputed in the .csv file 
+
+-------------------------------------------------------------
+Non-Ionising Dose (NID) Analysis:
+-------------------------------------------------------------
+
+NID units = MeV/g
+
+Boundary  Thickness     Density      NIEL                     Total       Total       Proton      Proton      Neutron     Neutron     Pion        Pion        Electron    Electron
+                                     Function                 NID         Error       NID         Error       NID         Error       NID         Error       NID         Error
+2         10 um         5.31 g/cm3   JPL/NRL/NASA-2003 (GaAs) 2.0538e+09  9.4232e+08  4.9234e+08  4.9234e+08  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1.5614e+09  8.0356e+08 
+-------------------------------------------------------------
+PHS Analysis:
+-------------------------------------------------------------
+ Outputed in the .csv file 
+
+-------------------------------------------------------------
+Dose Analysis:
+-------------------------------------------------------------
+
+No dose analysis output was requested
+
+
+-------------------------------------------------------------
+Dose Equivalent Analysis:
+-------------------------------------------------------------
+
+No dose equivalent analysis output was requested
+
+
+-------------------------------------------------------------
+Solar Cell Analysis (MC-SCREAM):
+-------------------------------------------------------------
+
+Param Tag      n         Cp        Ce        Dxp          Dxe          
+Ipmax          3         0.27      0.27      9.6200e+09   6.2720e+10   
+Isc            3         0.247     0.247     1.0620e+10   6.5230e+10   
+Pmax           3         0.249     0.249     1.7300e+09   1.5590e+10   
+Voc            3         0.0807    0.0807    5.3000e+08   5.0200e+09   
+Vpmax          3         0.0937    0.0937    4.3000e+08   6.3800e+09   
+
+Damage units = MeV/g
+
+Boundary  Thickness     Density      NIEL                     Param   Total      Total     Proton     Proton    Electron   Electron   Degradation
+                                     Function                 set     Damage     Error     Damage     Error     Damage     Error      (P(d)/P0)
+2         10 um         5.31 g/cm3   JPL/NRL/NASA-2003 (GaAs) Ipmax   6.69e+08   4.97e+08 4.92e+08   4.92e+08 1.77e+08   6.56e+07  0.99212
+                                                              Isc     6.80e+08   4.97e+08 4.92e+08   4.92e+08 1.87e+08   6.97e+07  0.99334
+                                                              Pmax    6.20e+08   4.95e+08 4.92e+08   4.92e+08 1.28e+08   4.75e+07  0.96687
+                                                              Voc     6.14e+08   4.94e+08 4.92e+08   4.92e+08 1.22e+08   4.52e+07  0.97304
+                                                              Vpmax   5.70e+08   4.93e+08 4.92e+08   4.92e+08 7.76e+07   2.88e+07  0.96566
+-------------------------------------------------------------
+Simulation time: 1.97 seconds.
