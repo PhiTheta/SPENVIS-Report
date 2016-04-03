@@ -15,7 +15,7 @@ MULASSIS development sponsored by : European Space Agency,
                                     Effects Analysis Section
 
 MULASSIS version                  : ml-v01-20
-File creation date & time         : Sun Mar 27 19:53:56 2016
+File creation date & time         : Sun Apr  3 23:37:32 2016
 
 
 
@@ -124,4 +124,4 @@ Boundary  Thickness     Density      NIEL                     Param   Total     
                                                               Voc     6.14e+08   4.94e+08 4.92e+08   4.92e+08 1.22e+08   4.52e+07  0.97304
                                                               Vpmax   5.70e+08   4.93e+08 4.92e+08   4.92e+08 7.76e+07   2.88e+07  0.96566
 -------------------------------------------------------------
-Simulation time: 1.97 seconds.
+Simulation time: 1.93 seconds.
