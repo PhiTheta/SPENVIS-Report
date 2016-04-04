@@ -12,8 +12,8 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Linear Energy Transfer (LET) Spectrum}{7}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Cross Section and Components Characteristics}{7}{subsubsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.3}SEU Estimation}{9}{subsubsection.3.4.3}
-\contentsline {section}{\numberline {4}Discussion}{10}{section.4}
+\contentsline {section}{\numberline {4}Discussion}{11}{section.4}
 \setcounter {tocdepth}{1}
-\contentsline {subsection}{\numberline {A.1}Orbital Parameters of Cluster-II FM8 Tango}{11}{subsection.4.1}
-\contentsline {section}{References}{11}{section*.2}
-\contentsline {section}{Appendix}{11}{section*.3}
+\contentsline {subsection}{\numberline {A.1}Orbital Parameters of Cluster-II FM8 Tango}{12}{subsection.4.1}
+\contentsline {section}{References}{12}{section*.2}
+\contentsline {section}{Appendix}{12}{section*.3}
