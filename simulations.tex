@@ -44,7 +44,7 @@ The highes proton fluxes are expected at perigee, while for the electron flux th
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=.5\linewidth]{spenvis/electron_wmap}
+	\includegraphics[width=.6\linewidth]{spenvis/electron_wmap}
 		\caption{Electron Flux World map}
 		 \label{fig:e_wmap}
 \end{figure}
@@ -56,7 +56,7 @@ The satellite is using Azur 3G28 solar cells, with an EOL power of 95\% of the B
 Using SPENVIS' MC-SCREAM for solar cells, it was determined that the shielding thickness should be around 230 \textmu m which leaves an EOL powerloss of 3.3\%.
 
 \subsection{Total Dose and Shielding}
-
+\label{chap:dose}
 The satellite is using a memory device which can withstand a total radiation dose of 25 Krad before failure.
 
 With 1mm of shielding the memory device exceeds its maximum radiation dose with a total dose of 1.5 Mrad, which is about 62 times the maximum allowed dose.
@@ -65,19 +65,21 @@ To achieve a maximum dose of 25 Krad or less the shielding has to be increased t
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=.5\linewidth]{spenvis/memory_rad}
+	\includegraphics[width=.7\linewidth]{spenvis/memory_rad}
 		\caption{Dose received vs. Shielding in mm}
 		 \label{fig:rad_memory}
 \end{figure}
+
+
 \subsection{Single Event Upsets}
 
 \subsubsection{Linear Energy Transfer (LET) Spectrum}
 
 The LET spectra was calculated using SPENVIS, including solar particles, trapped protons and galactic cosmic rays, with a shielding of 1 $g/cm^2$ (c.f. fig. \ref{fig:let_spectra}).
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\linewidth]{spenvis/LET_spectra}
+	\includegraphics[width=.7\linewidth]{spenvis/LET_spectra}
 		\caption{LET spectra for the full mission}
 		 \label{fig:let_spectra}
 \end{figure}
@@ -156,7 +158,7 @@ LET = [2.73E+03 3.13E+03 4.65E+03 7.23E+03 1.77E+04 2.77E+04 3.74E+04 5.72E+04].
  
  \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=.5\linewidth]{spenvis/fit}
+	\includegraphics[width=.7\linewidth]{spenvis/fit}
 		\caption{Weibull fit result}
 		 \label{fig:fit}
 \end{figure}
@@ -187,11 +189,11 @@ Bipolar 93L422 & $13.8 \cdot 10^{-3}$\\
  \caption{SEU rates}
  \end{table}
  
- As one can see easily in table \ref{table:seu_rate} the CMOS R160 has the lowest SEU rates of all devices, thus it is the best choice.
+ As one can see easily in table \ref{table:seu_rate} the CMOS R160 has the lowest SEU rates of all devices, thus it is the best choice. The differential Flux is plotted against the LET for the four devices in Fig. \ref{fig:seu}.
  
-  \begin{figure}[!htbp]
+  \begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\linewidth]{spenvis/seu}
+	\includegraphics[width=\linewidth]{spenvis/seu}
 		\caption{Plot of different LETs}
 		 \label{fig:seu}
 \end{figure}
