@@ -1,9 +1,16 @@
 \section{Conclusion}
 In this report we analysed the Cluster-II FM-8 Tango Mission by the European Space Agency with regard to the space environment the satellite is in during its lifetime.
 
-The first chapter introduced the mission of FM-8 Tango, where four similar satellites are building a very accurate 3D-Model of the earth's magentosphere to analyse and understand its regions better, and described the orbit and its different effects it has on the spacecraft, as drag, erosion and radiation effects.
+The first chapter introduced the mission of FM-8 Tango, where four similar satellites are building a very accurate 3D-Model of the earth's magnetosphere to analyse and understand its regions better, and described the orbit and its different effects it has on the spacecraft, as drag, erosion and radiation effects.
 
-Having defined these constraints, we modelled the mission with the tool SPENVIS, to run simulations on the spacraft environment, especially with focus on the radiation effects it has on the spacecraft.
+Having defined these constraints, we modelled the mission with the tool SPENVIS, to run simulations on the spaceraft environment, especially with focus on the radiation effects it has on the spacecraft.
 Due to the degradation of the Azur 3G28 solar cells, which we assumed to be used on the spacecraft, as stated in the report instructions, we found out that the shielding thickness for the mission time should be 230 $\mu$m to reduce the incoming flux to have an acceptable degradation at the EOL.
 
-In addition, we analysed the total ionising dose on a memory device to determine the necessary shielding to achieve a maximum
+In addition, we analysed the total ionising dose on a memory device to determine the necessary shielding to achieve a maximum dose of 25Krad on the device, which we found out to be minimum 5.1mm.
+
+Since Drag Forces and Atomic Oxygen Effects were very small, they were neglected for further calculations \citep{vallado2008}.
+
+Also, since the plasma environment affects the spacecraft in terms of spacecraft charging amongst other effects, we analysed the LET Spectra, including solar particles, trapped protons and GCR's with the help of SPENVIS and determined the cross section and component characteristics for four different memory devices, which were needed for the SEU estimation.
+Having only experimental data on one of the devices, we applied curve fitting techniques to finally calculate the SEU rate for all devices.
+
+Comparing the results of SEU rates, we were able to pinpoint the CMOS R160-25 device as the most suitable device for the FM-8 Mission, since it has the least amount of Single Event Upsets with $2.5 \cdot 10^{-6}$  \( \frac{1}{sec} \), compared to the other three devices.

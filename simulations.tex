@@ -175,10 +175,11 @@ The SEU is calculated with the following formula (assuming omnidirectional flux)
 \frac{dU}{dt} = 4 \pi \int_{0}^{\infty} \sigma\left ( LET \right ) \sum_{z=92}^{z=0}h\left ( LET \right )dLET
 \end{equation*}
 
-The resulting SEU in $frac{1}{sec}$ are
+The resulting SEU in \( \frac{1}{sec} \) are
 
 \begin{table}[!htp]
  \centering
+  \caption{SEU rates}
  \begin{tabular}{lcr}
   NMOS2164 & $9.6 \cdot 10^{-3}$\\
 CMOS R160-25 & $2.5 \cdot 10^{-6}$\\
@@ -186,7 +187,7 @@ Bipolar 93L422 & $13.8 \cdot 10^{-3}$\\
    SMJ329C50GFAM66 & $3.0 \cdot 10^{-3}$\\
  \end{tabular}
  \label{table:seu_rate}
- \caption{SEU rates}
+
  \end{table}
  
  As one can see easily in table \ref{table:seu_rate} the CMOS R160 has the lowest SEU rates of all devices, thus it is the best choice. The differential Flux is plotted against the LET for the four devices in Fig. \ref{fig:seu}.
